@@ -11,6 +11,17 @@
     return result;
 }
 
+void ShowArray(string[] array)
+{
+    Console.WriteLine("Ваш массив: ");
+    for (int i = 0; i<array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+    Console.WriteLine();
+}
+
+
 void ShowNewArray(string[] array)
 {
     Console.WriteLine("Вот строки длинна которых меньше либо равна 3: ");
@@ -29,5 +40,5 @@ int a = Convert.ToInt32(Console.ReadLine());
 
 string[] arr = GetArray(a);
 
-
+ShowArray(arr);
 ShowNewArray(arr);
